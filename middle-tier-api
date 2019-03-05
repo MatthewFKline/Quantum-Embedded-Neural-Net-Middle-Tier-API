@@ -1,5 +1,19 @@
 #!/usr/bin/python3
 
+import random
+from random import shuffle
+
+samplenouns = ["neural net", "API", "solution system", "hypervisor", "management software", "solution suite", "data center", "firmware"]
+
+sampleadjectives = ["synergistic", "quantum", "embedded", "middle-tier", "back-end", "front-end", "side-end", "micro", "macro"]
 
 
-print("TESTING")
+shuffle(samplenouns)
+shuffle(sampleadjectives)
+
+nounnumber = random.randint(0, len(samplenouns))
+adjnumber = random.randint(0, len(sampleadjectives))
+
+print ("".join(samplenouns))
+
+
